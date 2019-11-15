@@ -93,9 +93,6 @@ class NameAttribute(object):
                     "Country name must be a 2 character country code"
                 )
 
-        if len(value) == 0:
-            raise ValueError("Value cannot be an empty string")
-
         # The appropriate ASN1 string type varies by OID and is defined across
         # multiple RFCs including 2459, 3280, and 5280. In general UTF8String
         # is preferred (2459), but 3280 and 5280 specify several OIDs with
